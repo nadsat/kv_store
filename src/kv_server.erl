@@ -56,7 +56,6 @@ handle_info(_Msg, State) ->
     {noreply, State}.
 
 terminate(_Reason, _State) ->
-    error_logger:info_msg("Leaving  vime_loop\n"),
     ok.
 
 code_change(_OldVsn, State, _Data ) ->
